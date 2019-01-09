@@ -1,0 +1,9 @@
+# Android Studio
+/measurement/*.iml
+/measurement/.idea
+/measurement/.gradle
+/measurement/local.properties
+/measurement/build
+/measurement/.externalNativeBuild
+/measurement/*/build
+/measurement/*/*.iml
