@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    tools:context=".CBRFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="Type: " />-->
+
+        <RadioGroup
+            android:id="@+id/direction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="12dp"
+                android:text="Uplink" />
+
+            <RadioButton
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Downlink" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="82dp"
+            android:text="Duration (s):" />
+
+        <EditText
+            android:id="@+id/duration_text"
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="65dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="number"
+            android:maxLength="6">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="113dp"
+            android:text="bitrate (kbps):" />
+
+        <EditText
+            android:id="@+id/rate_text"
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="98dp"
+            android:maxLines="1"
+            android:lines="1">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:text="IP:" />
+
+        <EditText
+            android:id="@+id/ip_text"
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="123dp"
+            android:maxLines="1"
+            android:lines="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="160dp"
+            android:text="start" />
+
+    </FrameLayout>
+
+
+</android.support.wear.widget.BoxInsetLayout>

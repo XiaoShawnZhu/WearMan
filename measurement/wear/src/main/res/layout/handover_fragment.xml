@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    tools:context=".HandoverFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:text="Handover Test with CBR streaming." />
+
+        <TextView
+            android:id="@+id/ip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="115dp"
+            android:text="IP:" />
+
+        <EditText
+            android:id="@+id/ip_text"
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:maxLines="1"
+            android:lines="1">
+        </EditText>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="155dp"
+            android:text="start" />
+
+    </FrameLayout>
+
+</android.support.wear.widget.BoxInsetLayout>

@@ -1,0 +1,16 @@
+diff --git a/msm/net/ipv4/tcp_input.c b/msm/net/ipv4/tcp_input.c
+index e99251a..d77b116 100644
+--- a/msm/net/ipv4/tcp_input.c
++++ b/msm/net/ipv4/tcp_input.c
+@@ -529,6 +529,11 @@ void tcp_rcv_space_adjust(struct sock *sk)
+ 	int time;
+ 	int space;
+ 
++	struct inet_sock *ik=inet_sk(sk);
++	struct timespec ts;
++	getnstimeofday(&ts);
++	printk("WearMan %u %pI4 %d %ld %ld\n", tp->copied_seq, &(ik->inet_daddr), ntohs(ik->inet_dport), ts.tv_sec, ts.tv_nsec);
++
+ 	if (tp->rcvq_space.time == 0)
+ 		goto new_measure;
+ 

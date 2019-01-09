@@ -1,0 +1,14 @@
+diff --git a/frameworks/base/core/java/android/bluetooth/BluetoothSocket.java b/frameworks/base/core/java/android/bluetooth/BluetoothSocket.java
+index b2ea200..3c639b4 100755
+--- a/frameworks/base/core/java/android/bluetooth/BluetoothSocket.java
++++ b/frameworks/base/core/java/android/bluetooth/BluetoothSocket.java
+@@ -528,6 +528,9 @@ public final class BluetoothSocket implements Closeable {
+         //      splitting the write into multiple smaller writes.
+         //      Rfcomm uses dynamic allocation, and should not have any bindings
+         //      to the actual message length.
++
++            Log.d(TAG, "WearMan " + System.currentTimeMillis() + " " + length + " " + ((length > 7)?Arrays.toString(Arrays.copyOfRange(b, 0, 7)):Arrays.toString(b)));
++
+             if (VDBG) Log.d(TAG, "write: " + mSocketOS + " length: " + length);
+             if (mType == TYPE_L2CAP) {
+                 if(length <= mMaxTxPacketSize) {
