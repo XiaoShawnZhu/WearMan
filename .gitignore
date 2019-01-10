@@ -7,3 +7,8 @@
 /measurement/.externalNativeBuild
 /measurement/*/build
 /measurement/*/*.iml
+
+# Python
+/analysis/__pycache__
+/analysis/helper/__pycache__
+/analysis/helper/*/__pycache__
