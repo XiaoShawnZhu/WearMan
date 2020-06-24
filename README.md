@@ -5,7 +5,7 @@
 </div>
 
 ## Introduction
-<b>WearMan</b> is a toolkit for <b>wear</b>able networking performance <b>m</b>easurement and <b>an</b>alysis, used in our SIGMETRICS'19 paper: [**Understanding the Networking Performance of Wear OS**](). It enables active and passive measurement of Bluetooth and WiFi network performance on wearable devices. 
+<b>WearMan</b> is a toolkit for <b>wear</b>able networking performance <b>m</b>easurement and <b>an</b>alysis, used in our SIGMETRICS'19 paper: [**Understanding the Networking Performance of Wear OS**](https://xiaoshawnzhu.github.io/sigmetrics19_wearman.pdf). It enables active and passive measurement of Bluetooth and WiFi network performance on wearable devices. 
 
 WearMan consists of measurement and analysis parts.  
 
